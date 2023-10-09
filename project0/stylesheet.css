@@ -1,0 +1,219 @@
+/* 
+  Author  : Charlito Abrahm C. Danes
+  Course  : CS50’s Web Programming with Python and JavaScript 
+  Project : Project 0: Search 
+  Date    : August 27, 2023
+  Version : 1.0
+*/
+
+/* <body> */
+body {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #bdc1c6;
+  background-color: #202124;
+  margin: 0;
+  height: auto;
+}
+
+/* <header> */
+header {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px 40px 0px 0px;
+  padding-bottom: 32px;
+  font-size: 13px;
+}
+header a {
+  padding-right: 15px;
+  color: #ffffff;
+}
+/* End of </header> */
+
+/* <a> */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+/* End of </a> */
+
+/* <div class="search-container"> */
+.search-container {
+  text-align: center;
+}
+
+/* Google logo */
+.google-logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+img {
+  margin-bottom: 3px;
+  margin-top: -4px;
+}
+
+.google-image {
+  color: #4487f6;
+  font: 16px/16px arial, sans-serif;
+  position: absolute;
+  left: 207px;
+  bottom: 0;
+  padding: 6px 8px;
+}
+/* End of Google logo styles */
+
+/* <form> */
+form {
+  padding: 20px;
+}
+
+/* Attribute selector of type="text" */
+input[type=text] {
+  display: flex;
+  color: #e8eaed;
+  height: 44px;
+  background: #202124;
+  border: 1px solid #5f6368;
+  border-radius: 24px;
+  margin: 0 auto;
+  width: 520px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 17px;
+}
+
+input[type=text]:hover,
+input[type=text]:focus {
+  background-color: #303134;
+  outline: none;
+  border-color: #303134;
+  box-shadow: 0 0 5px 1px #1c1d1f;
+}
+/* End of attribute selector type="text" */
+
+/* <div class="buttons"> */
+.buttons {
+  padding: 18px 0px 0px;
+}
+
+/* Attribute selector of type="submit" */
+input[type=submit] {
+  background-color: #303134;
+  color: #e8eaed;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  margin: 11px 4px;
+  font-size: 14px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;  
+}
+
+input[type=submit]:hover {
+  border-color: #5f6368;
+}
+/* End of  type="submit" */
+/* End of <div class="buttons"> */
+
+/* Exclusive for index.html */
+input.feeling-lucky, input.google-search {
+  margin: 11px 4px;
+  padding: 0px 16px;
+}
+
+input.feeling-lucky {
+  width: 143px;
+}
+
+input.google-search {
+  width: 128px;
+}
+/* End of exclusive for index.html */
+/* End of </form> */
+/* End of <div class="search-container"> */
+
+/* <footer> */
+footer {
+  background: #171717;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.country {
+  padding: 15px 30px;
+  border-bottom: 1px solid #3c4043;
+  font-size: 15px;
+  color: #9aa0a6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+footer a {
+  color: #999da2;
+}
+.links {
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+}
+/* End of </footer> */
+/* End of </body> */
+
+/* Media queries */
+@media (max-width: 768px) {
+  header {
+    margin: 10px 0;
+    padding: 5px;
+    padding-bottom: 16px;
+  }
+
+  header a {
+    padding-right: 10px;
+  }
+
+  input[type=text] {
+    width: auto;
+    max-width: 400px;
+  }
+
+  img {
+    width: 204px;
+    height: auto;
+  }
+
+  .google-image {
+    color: #4487f6;
+    font: 12px arial, sans-serif;
+    position: absolute;
+    left: 153px;
+    bottom: 0;
+    padding: 6px 8px;
+  }
+
+  .links-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px;
+  }
+}
+/* End of media queries */
